@@ -6336,7 +6336,60 @@ header .navbar-brand img {
 footer img {
   max-width: 200px; }
 
-body {
+.home-slider {
+  background: #8e44ad;
+  display: flex;
+  color: white;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  min-height: 550px;
   font-family: Roboto; }
+  .home-slider a.btn-primary {
+    font-size: 1rem;
+    color: white;
+    font-weight: normal;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    padding: 5px 10px 5px 10px; }
+    .home-slider a.btn-primary.btn-1 {
+      background: #d35400;
+      box-shadow: 0px 3px #a04000; }
+      @media (min-width: 768px) {
+        .home-slider a.btn-primary.btn-1:hover, .home-slider a.btn-primary.btn-1:active {
+          background: #d35400;
+          box-shadow: 0px 3px #a04000; } }
+
+.home-service {
+  background: #3498db;
+  display: flex;
+  color: white;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  min-height: 500px;
+  font-family: Roboto; }
+  .home-service h2 {
+    position: relative;
+    margin-bottom: 1rem; }
+    .home-service h2:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      height: 3px;
+      width: 50px;
+      bottom: -5px;
+      background: #2c3e50;
+      transform: translateX(-50%); }
+    .home-service h2 p {
+      max-width: auto;
+      margin: auto; }
+  .home-service img {
+    max-width: 200px;
+    margin: 2rem 0; }
+  @media (min-width: 768px) {
+    .home-service p {
+      max-width: auto; } }
 
 /*# sourceMappingURL=main.css.map */

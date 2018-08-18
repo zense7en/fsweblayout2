@@ -1,2 +1,56 @@
-body
+//-Phần chung cho các section
+=all($color, $height, $fontcolor)
+	background: $color
+	display: flex
+	color: $fontcolor
+	justify-items: center
+	text-align: center
+	align-items: center
+	min-height: $height
+	body
 	font-family: Roboto
+//-Layout 1
+.home-slider
+	+all($wisteria, 550px, white)
+	a.btn-primary
+		font-size: 1rem
+		color: white
+		font-weight: normal
+		border-radius: 5px
+		letter-spacing: 1px
+		padding: 5px 10px 5px 10px
+		&.btn-1
+			background: $pumpkin
+			box-shadow: 0px 3px darken($pumpkin, 10%)
+			+media-breakpoint-up(md)
+				&:hover,
+				&:active
+					background: $pumpkin
+					box-shadow: 0px 3px darken($pumpkin, 10%)
+//- Layout 2
+.home-service
+	+all($peter-river, 500px, white)
+	h2
+		position: relative
+		margin-bottom: 1rem
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			left: 50%
+			height: 3px
+			width: 50px
+			bottom: -5px
+			background: $midnight-blue
+			transform: translateX(-50%)
+		p
+			max-width: auto
+			margin: auto
+	img
+		max-width: 200px
+		margin: 2rem 0
+	+media-breakpoint-up(md)
+		p
+			max-width: auto
+	
+
