@@ -6392,4 +6392,30 @@ footer img {
     .home-service p {
       max-width: auto; } }
 
+.home-team {
+  background: #e5e5e5;
+  display: flex;
+  color: #64778a;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  min-height: 300px;
+  font-family: Roboto; }
+  .home-team h2 {
+    position: relative;
+    margin-bottom: 1rem; }
+    .home-team h2:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      height: 3px;
+      width: 50px;
+      bottom: -5px;
+      background: #2c3e50;
+      transform: translateX(-50%); }
+    .home-team h2 p {
+      max-width: auto;
+      margin: auto; }
+
 /*# sourceMappingURL=main.css.map */
